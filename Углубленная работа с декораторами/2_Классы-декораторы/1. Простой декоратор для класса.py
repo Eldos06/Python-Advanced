@@ -1,17 +1,9 @@
-# 1. Простой декоратор для класса:
-# Создай декоратор add_class_name, который добавляет атрибут class_name в любой класс.
+# Задание 1: Декоратор класса для добавления атрибута
+# Создай декоратор add_description, который добавляет в любой класс атрибут description со значением "This is a class".
 
-# python
+# Контекст:
 
-# def add_class_name(cls):
-#     cls.class_name = cls.__name__
-#     return cls
-
-# @add_class_name
-# class Example:
-#     pass
-
-# print(Example.class_name)  # Должно вывести 'Example'
+# Ты должен использовать декоратор, который добавляет атрибут description всем классам, которые он украшает.
 
 ##############################################################################
 
@@ -24,5 +16,5 @@ class MyClass:
     id = int
     name = str
 
-# Проверяем атрибут
-print(MyClass.description)  # Должно вывести: This is a class
+
+print(MyClass.description)  
