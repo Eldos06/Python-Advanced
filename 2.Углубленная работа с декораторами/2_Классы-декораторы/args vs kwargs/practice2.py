@@ -14,7 +14,7 @@ def person_details(**kws):
 person_details(first_name="John", last_name="Doe", age=30)
 # Output: First Name: John, Last Name: Doe, Age: 30
 
-person_details(first_name="Alice", age=25)
+person_details(first_name="Alice", age=25, last_name=None)
 # Output: First Name: Alice, Last Name: Unknown, Age: 25
 
 
