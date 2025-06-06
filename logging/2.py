@@ -1,19 +1,23 @@
 import logging
+from common import configure_logging
+from utils import do_something
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
-def do_something():
-    logger.debug("Prepare to do something")
-    logger.debug("Doing something")
-    logger.warning("Done do something")
+
 
 def main():
-    logging.basicConfig(level=logging.INFO)
+    configure_logging(level=logging.DEBUG)
     logger.warning("Hello! Starting main")
     do_something()
     logger.warning("Done doing something")
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
 
 
