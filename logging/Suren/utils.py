@@ -10,7 +10,7 @@ class User:
         return f"{self.__class__.__name__}(id={id(self)})"
 
 def something_expensive():
-    sleep(5)
+    sleep(2)
     logger.warning("Done something expensive")
     return [{"message": "something expensive"}]
 
@@ -18,18 +18,19 @@ def something_expensive():
 def do_something():
     number = randint(a=1, b=100)
     user = User()
-    word = "query"
+    word = "qwerty"
 
     logger.debug(
-        "Prepare to do something, number: %s, word: %r, user: %s",
+        "Prepare to do something, number: %s, word: %s, user: %s",
         number,
         word,
         user
                 )
     
     logger.info(
-        "Doing something number: %s, user: %s",
+        "Doing something number: %s, word: %s, user: %s",
         number,
+        word,
         user
                 )
     logger.warning("Expensive message: %s", something_expensive())
