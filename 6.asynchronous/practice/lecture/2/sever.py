@@ -1,42 +1,28 @@
 from aiohttp import web
 from asyncio import sleep
-import logging
-
-log = logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt="%Y-%m-%d %H:%M:%S",
-
-    )
-log = logging.getLogger(__name__)
+from common import setup_logging, log
 
 route = web.RouteTableDef()
-app = web.Application()
-app.add_routes(route)
-
 
 @route.get("/stocks")
-async def get_stock():
-    # Simulating a delay for fetching stock data
-    log.info("Fetching stocks...")
+async def get_stocks(request: web.Request):
     await sleep(1)
-    log.info("Stocks fetched successfully")
     return web.json_response(
-        data = {"stocks": ["AAPL", "GOOGL", "AMZN", "MSFT", "TSLA"]},
+        data={"stocks": ["A", "B"], "prices": [100, 200]},
     )
 
-
-async def get_weather():
-    # Simulating a delay for fetching weather data
-    log.info("Fetching weather...")
-    await sleep(1)
-    log.info("Weather fetched successfully")
+@route.get("/weather")
+async def get_weather(request: web.Request):
     return web.json_response(
-        data = {"weather": "sunny", "temperature": 25}
+        data={"weather": "sunny", "temperature": 25}
     )
 
-def main( ):
-    web.run_app(app, port=8080)
+def main():
+    setup_logging()
+    app = web.Application()
+    app.add_routes(route)
+    print("✅ Сервер запущен: http://127.0.0.1:8080")
+    web.run_app(app, host="127.0.0.1", port=8080)
 
 if __name__ == "__main__":
     main()
