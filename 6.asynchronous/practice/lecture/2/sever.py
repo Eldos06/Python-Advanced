@@ -1,42 +1,52 @@
+import asyncio
 from aiohttp import web
 from asyncio import sleep
-import logging
+from common import setup_logging
+import sys
 
-log = logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt="%Y-%m-%d %H:%M:%S",
-
-    )
-log = logging.getLogger(__name__)
+# Ensure compatibility with Windows event loop policy for Python 3.8+
+policy = asyncio.WindowsSelectorEventLoopPolicy()
+asyncio.set_event_loop_policy(policy)
 
 route = web.RouteTableDef()
-app = web.Application()
-app.add_routes(route)
-
 
 @route.get("/stocks")
-async def get_stock():
-    # Simulating a delay for fetching stock data
-    log.info("Fetching stocks...")
+async def get_stocks(request):
     await sleep(1)
-    log.info("Stocks fetched successfully")
     return web.json_response(
-        data = {"stocks": ["AAPL", "GOOGL", "AMZN", "MSFT", "TSLA"]},
+        data={"stocks": ["A", "B"], "prices": [100, 200]},
     )
 
-
-async def get_weather():
-    # Simulating a delay for fetching weather data
-    log.info("Fetching weather...")
-    await sleep(1)
-    log.info("Weather fetched successfully")
+@route.get("/weather")
+async def get_weather(request):
     return web.json_response(
-        data = {"weather": "sunny", "temperature": 25}
+        data={"weather": "sunny", "temperature": 25}
     )
 
-def main( ):
-    web.run_app(app, port=8080)
+def main():
+    setup_logging()
+    app = web.Application()
+    app.add_routes(route)
+    # Add CORS support
+    try:
+        import aiohttp_cors
+        cors = aiohttp_cors.setup(app)
+        for route_obj in list(app.router.routes()):
+            cors.add(route_obj)
+    except ImportError:
+        print("aiohttp_cors not installed, skipping CORS setup.")
+    print("✅ Server started: http://127.0.0.1:8080")
+    try:
+        web.run_app(app, host="127.0.0.1", port=8080)
+    except Exception as e:
+        print(f"❌ Server startup error: {e}")
+
+# Ensure compatibility with Windows event loop policy for Python 3.8+
+if (sys.platform.startswith('win')
+        and sys.version_info[0] == 3
+        and sys.version_info[1] >= 8):
+    policy = asyncio.WindowsSelectorEventLoopPolicy()
+    asyncio.set_event_loop_policy(policy)
 
 if __name__ == "__main__":
     main()
