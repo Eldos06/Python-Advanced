@@ -7,4 +7,4 @@ def setup_logging():
         datefmt="%Y-%m-%d %H:%M:%S"
     )
 
-log = logging.getLogger("common")
+log = logging.getLogger(__name__)
