@@ -1,12 +1,11 @@
 from asyncio import TaskGroup, run
 import asyncio
 from aiohttp import ClientSession
-from common import setup_logging, log
+from common import configure_logging, log
 import urllib.parse
-import sys
 
-policy = asyncio.WindowsSelectorEventLoopPolicy()
-asyncio.set_event_loop_policy(policy)
+
+
 
 
 
@@ -14,64 +13,33 @@ asyncio.set_event_loop_policy(policy)
 API_BASE = "http://127.0.0.1:8080"
 
 
-def create_url(path: str) -> str:
-    """
-    Constructs a full API URL by joining the base URL with the given path.
-    """
+def create_url(base: str, path: str):
+    return urllib.parse.urljoin(base, path)
+
+
+def api_url(path: str) -> str:
     return urllib.parse.urljoin(API_BASE, path)
 
 
 async def get_api(url: str) -> dict:
-    """
-    Fetches JSON data from the specified API URL using an HTTP GET request.
-
-    Args:
-        url (str): The API endpoint URL.
-
-    Returns:
-        dict: The parsed JSON response from the API.
-
-    Raises:
-        Exception if the request fails or response is not JSON.
-    """
-
-    import aiohttp
-    conn = aiohttp.TCPConnector(limit_per_host=5)
-
-
-    async with ClientSession(connector=conn) as session:
+    async with ClientSession() as session:
         async with session.get(url) as response:
-            response.raise_for_status()
+            log.info(f"Response url %s", response.url)
             return await response.json()
 
 
 async def run_main():
-    """
-    Orchestrates concurrent API calls to fetch stocks and weather data.
-    """
+    log.info("Run API calls")
     async with TaskGroup() as tg:
-        log.info("Starting API calls")
         stocks_task = tg.create_task(get_api(create_url("/stocks")))
         weather_task = tg.create_task(get_api(create_url("/weather")))
 
-        # Get the results after TaskGroup finishes
-        stocks = await stocks_task
-        weather = await weather_task
+    log.info(f"Stocks: {stocks_task.result()}")
+    log.info(f"Weather: {weather_task.result()}")
 
-        log.info(f"Stocks: {stocks}")
-        log.info(f"Weather: {weather}")
-
-# Ensure compatibility with Windows event loop policy for Python 3.8+
-if (sys.platform.startswith('win')
-        and sys.version_info[0] == 3
-        and sys.version_info[1] >= 8):
-    policy = asyncio.WindowsSelectorEventLoopPolicy()
-    asyncio.set_event_loop_policy(policy)
-
-def main():
-    setup_logging()
-
+async def main():
+    configure_logging()
+    run(run_main())
 
 if __name__ == "__main__":
-    setup_logging()
-    run(run_main())
+    run(main())
