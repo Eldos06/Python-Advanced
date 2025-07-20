@@ -33,7 +33,8 @@ async def remove_file():
 async def main():
   # await read_lines_from_file()
   # await show_write_to_temp_file()
-  await remove_file()
+  # await remove_file()
+  await read_file()
 
 if __name__ == '__main__':
   asyncio.run(main())
