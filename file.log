@@ -1,0 +1,309 @@
+2025-07-20 13:41:01 - __main__ - INFO - Line 1
+2025-07-20 13:41:01 - __main__ - INFO - Line 2
+2025-07-20 13:41:01 - __main__ - INFO - Line 3
+2025-07-20 13:41:01 - __main__ - INFO - Line 4
+2025-07-20 13:41:01 - __main__ - INFO - Line 5
+2025-07-20 13:41:01 - __main__ - INFO - Line 6
+2025-07-20 13:41:01 - __main__ - INFO - Line 7
+2025-07-20 13:41:01 - __main__ - INFO - Line 8
+2025-07-20 13:41:01 - __main__ - INFO - Line 9
+2025-07-20 13:41:01 - __main__ - INFO - Line 10
+2025-07-20 13:41:19 - __main__ - INFO - Line 1
+2025-07-20 13:41:19 - __main__ - INFO - Line 2
+2025-07-20 13:41:19 - __main__ - INFO - Line 3
+2025-07-20 13:41:19 - __main__ - INFO - Line 4
+2025-07-20 13:41:19 - __main__ - INFO - Line 5
+2025-07-20 13:41:19 - __main__ - INFO - Line 6
+2025-07-20 13:41:19 - __main__ - INFO - Line 7
+2025-07-20 13:41:19 - __main__ - INFO - Line 8
+2025-07-20 13:41:19 - __main__ - INFO - Line 9
+2025-07-20 13:41:19 - __main__ - INFO - Line 10
+2025-07-20 13:41:46 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:41:46 - __main__ - INFO - Line 1
+2025-07-20 13:41:46 - __main__ - INFO - Line 2
+2025-07-20 13:41:46 - __main__ - INFO - Line 3
+2025-07-20 13:41:46 - __main__ - INFO - Line 4
+2025-07-20 13:41:46 - __main__ - INFO - Line 5
+2025-07-20 13:41:46 - __main__ - INFO - Line 6
+2025-07-20 13:41:46 - __main__ - INFO - Line 7
+2025-07-20 13:41:46 - __main__ - INFO - Line 8
+2025-07-20 13:41:46 - __main__ - INFO - Line 9
+2025-07-20 13:41:46 - __main__ - INFO - Line 10
+2025-07-20 13:41:46 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:41:54 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:41:54 - __main__ - INFO - Line 1
+2025-07-20 13:41:54 - __main__ - INFO - Line 2
+2025-07-20 13:41:54 - __main__ - INFO - Line 3
+2025-07-20 13:41:54 - __main__ - INFO - Line 4
+2025-07-20 13:41:54 - __main__ - INFO - Line 5
+2025-07-20 13:41:54 - __main__ - INFO - Line 6
+2025-07-20 13:41:54 - __main__ - INFO - Line 7
+2025-07-20 13:41:54 - __main__ - INFO - Line 8
+2025-07-20 13:41:54 - __main__ - INFO - Line 9
+2025-07-20 13:41:54 - __main__ - INFO - Line 10
+2025-07-20 13:41:54 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:43:57 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:43:57 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:44:30 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:44:30 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:44:44 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:44:44 - __main__ - INFO - 'foo\n'
+2025-07-20 13:44:44 - __main__ - INFO - 'bar\n'
+2025-07-20 13:44:44 - __main__ - INFO - 'baz\n'
+2025-07-20 13:44:44 - __main__ - INFO - 'qux\n'
+2025-07-20 13:44:44 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:49:44 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:49:44 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:50:03 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:50:03 - __main__ - INFO - Line 1
+2025-07-20 13:50:03 - __main__ - INFO - Line 2
+2025-07-20 13:50:03 - __main__ - INFO - Line 3
+2025-07-20 13:50:03 - __main__ - INFO - Line 4
+2025-07-20 13:50:03 - __main__ - INFO - Line 5
+2025-07-20 13:50:03 - __main__ - INFO - Line 6
+2025-07-20 13:50:03 - __main__ - INFO - Line 7
+2025-07-20 13:50:03 - __main__ - INFO - Line 8
+2025-07-20 13:50:03 - __main__ - INFO - Line 9
+2025-07-20 13:50:03 - __main__ - INFO - Line 10
+2025-07-20 13:50:03 - __main__ - INFO - AliceBobCharlieAliceBobCharlie
+2025-07-20 13:50:03 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:50:45 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:50:45 - __main__ - INFO - Line 1
+2025-07-20 13:50:45 - __main__ - INFO - Line 2
+2025-07-20 13:50:45 - __main__ - INFO - Line 3
+2025-07-20 13:50:45 - __main__ - INFO - Line 4
+2025-07-20 13:50:45 - __main__ - INFO - Line 5
+2025-07-20 13:50:45 - __main__ - INFO - Line 6
+2025-07-20 13:50:45 - __main__ - INFO - Line 7
+2025-07-20 13:50:45 - __main__ - INFO - Line 8
+2025-07-20 13:50:45 - __main__ - INFO - Line 9
+2025-07-20 13:50:45 - __main__ - INFO - Line 10
+2025-07-20 13:50:45 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:50:45 - __main__ - INFO - Bob
+2025-07-20 13:50:45 - __main__ - INFO - Charlie
+2025-07-20 13:50:45 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:51:01 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:51:01 - __main__ - INFO - Line 1
+2025-07-20 13:51:01 - __main__ - INFO - Line 2
+2025-07-20 13:51:01 - __main__ - INFO - Line 3
+2025-07-20 13:51:01 - __main__ - INFO - Line 4
+2025-07-20 13:51:01 - __main__ - INFO - Line 5
+2025-07-20 13:51:01 - __main__ - INFO - Line 6
+2025-07-20 13:51:01 - __main__ - INFO - Line 7
+2025-07-20 13:51:01 - __main__ - INFO - Line 8
+2025-07-20 13:51:01 - __main__ - INFO - Line 9
+2025-07-20 13:51:01 - __main__ - INFO - Line 10
+2025-07-20 13:51:01 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:51:01 - __main__ - INFO - Bob
+2025-07-20 13:51:01 - __main__ - INFO - Charlie
+2025-07-20 13:51:01 - __main__ - INFO - Alice
+2025-07-20 13:51:01 - __main__ - INFO - Bob
+2025-07-20 13:51:01 - __main__ - INFO - Charlie
+2025-07-20 13:51:01 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:53:52 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:53:52 - __main__ - INFO - Line 1
+2025-07-20 13:53:52 - __main__ - INFO - Line 2
+2025-07-20 13:53:52 - __main__ - INFO - Line 3
+2025-07-20 13:53:52 - __main__ - INFO - Line 4
+2025-07-20 13:53:52 - __main__ - INFO - Line 5
+2025-07-20 13:53:52 - __main__ - INFO - Line 6
+2025-07-20 13:53:52 - __main__ - INFO - Line 7
+2025-07-20 13:53:52 - __main__ - INFO - Line 8
+2025-07-20 13:53:52 - __main__ - INFO - Line 9
+2025-07-20 13:53:52 - __main__ - INFO - Line 10
+2025-07-20 13:53:52 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:53:52 - __main__ - INFO - Bob
+2025-07-20 13:53:52 - __main__ - INFO - Charlie
+2025-07-20 13:53:52 - __main__ - INFO - Alice
+2025-07-20 13:53:52 - __main__ - INFO - Bob
+2025-07-20 13:53:52 - __main__ - INFO - Charlie
+2025-07-20 13:53:52 - __main__ - INFO - Alice
+2025-07-20 13:53:52 - __main__ - INFO - Bob
+2025-07-20 13:53:52 - __main__ - INFO - Charlie
+2025-07-20 13:53:52 - root - INFO - Finished the asynchronous file operations
+2025-07-20 13:54:25 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:54:25 - __main__ - INFO - Line 1
+2025-07-20 13:54:25 - __main__ - INFO - Line 2
+2025-07-20 13:54:25 - __main__ - INFO - Line 3
+2025-07-20 13:54:25 - __main__ - INFO - Line 4
+2025-07-20 13:54:25 - __main__ - INFO - Line 5
+2025-07-20 13:54:25 - __main__ - INFO - Line 6
+2025-07-20 13:54:25 - __main__ - INFO - Line 7
+2025-07-20 13:54:25 - __main__ - INFO - Line 8
+2025-07-20 13:54:25 - __main__ - INFO - Line 9
+2025-07-20 13:54:25 - __main__ - INFO - Line 10
+2025-07-20 13:54:25 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:54:25 - __main__ - INFO - Bob
+2025-07-20 13:54:25 - __main__ - INFO - Charlie
+2025-07-20 13:54:25 - __main__ - INFO - Alice
+2025-07-20 13:54:25 - __main__ - INFO - Bob
+2025-07-20 13:54:25 - __main__ - INFO - Charlie
+2025-07-20 13:54:25 - __main__ - INFO - Alice
+2025-07-20 13:54:25 - __main__ - INFO - Bob
+2025-07-20 13:54:25 - __main__ - INFO - Charlie
+2025-07-20 13:54:25 - __main__ - INFO - Alice
+2025-07-20 13:54:25 - __main__ - INFO - Bob
+2025-07-20 13:54:25 - __main__ - INFO - Charlie
+2025-07-20 13:55:07 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:55:07 - __main__ - INFO - Line 1
+2025-07-20 13:55:07 - __main__ - INFO - Line 2
+2025-07-20 13:55:07 - __main__ - INFO - Line 3
+2025-07-20 13:55:07 - __main__ - INFO - Line 4
+2025-07-20 13:55:07 - __main__ - INFO - Line 5
+2025-07-20 13:55:07 - __main__ - INFO - Line 6
+2025-07-20 13:55:07 - __main__ - INFO - Line 7
+2025-07-20 13:55:07 - __main__ - INFO - Line 8
+2025-07-20 13:55:07 - __main__ - INFO - Line 9
+2025-07-20 13:55:07 - __main__ - INFO - Line 10
+2025-07-20 13:55:07 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:55:07 - __main__ - INFO - Bob
+2025-07-20 13:55:07 - __main__ - INFO - Charlie
+2025-07-20 13:55:07 - __main__ - INFO - Alice
+2025-07-20 13:55:07 - __main__ - INFO - Bob
+2025-07-20 13:55:07 - __main__ - INFO - Charlie
+2025-07-20 13:55:07 - __main__ - INFO - Alice
+2025-07-20 13:55:07 - __main__ - INFO - Bob
+2025-07-20 13:55:07 - __main__ - INFO - Charlie
+2025-07-20 13:55:07 - __main__ - INFO - Alice
+2025-07-20 13:55:07 - __main__ - INFO - Bob
+2025-07-20 13:55:07 - __main__ - INFO - Charlie
+2025-07-20 13:55:07 - __main__ - INFO - Alice
+2025-07-20 13:55:07 - __main__ - INFO - Bob
+2025-07-20 13:55:07 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:55:24 - __main__ - INFO - Line 1
+2025-07-20 13:55:24 - __main__ - INFO - Line 2
+2025-07-20 13:55:24 - __main__ - INFO - Line 3
+2025-07-20 13:55:24 - __main__ - INFO - Line 4
+2025-07-20 13:55:24 - __main__ - INFO - Line 5
+2025-07-20 13:55:24 - __main__ - INFO - Line 6
+2025-07-20 13:55:24 - __main__ - INFO - Line 7
+2025-07-20 13:55:24 - __main__ - INFO - Line 8
+2025-07-20 13:55:24 - __main__ - INFO - Line 9
+2025-07-20 13:55:24 - __main__ - INFO - Line 10
+2025-07-20 13:55:24 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - __main__ - INFO - Alice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - __main__ - INFO - Alice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - __main__ - INFO - Alice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - __main__ - INFO - Alice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:24 - __main__ - INFO - Alice
+2025-07-20 13:55:24 - __main__ - INFO - Bob
+2025-07-20 13:55:24 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:55:42 - __main__ - INFO - Line 1
+2025-07-20 13:55:42 - __main__ - INFO - Line 2
+2025-07-20 13:55:42 - __main__ - INFO - Line 3
+2025-07-20 13:55:42 - __main__ - INFO - Line 4
+2025-07-20 13:55:42 - __main__ - INFO - Line 5
+2025-07-20 13:55:42 - __main__ - INFO - Line 6
+2025-07-20 13:55:42 - __main__ - INFO - Line 7
+2025-07-20 13:55:42 - __main__ - INFO - Line 8
+2025-07-20 13:55:42 - __main__ - INFO - Line 9
+2025-07-20 13:55:42 - __main__ - INFO - Line 10
+2025-07-20 13:55:42 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - __main__ - INFO - Alice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - __main__ - INFO - Alice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - __main__ - INFO - Alice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - __main__ - INFO - Alice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:55:42 - __main__ - INFO - Alice
+2025-07-20 13:55:42 - __main__ - INFO - Bob
+2025-07-20 13:55:42 - __main__ - INFO - Charlie
+2025-07-20 13:56:11 - root - INFO - Starting the asynchronous file operations
+2025-07-20 13:56:12 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:00:12 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:00:30 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - Alice
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - Alice
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - Alice
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - Alice
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - Alice
+2025-07-20 14:00:30 - __main__ - INFO - Charlie
+2025-07-20 14:00:30 - __main__ - INFO - Bob
+2025-07-20 14:00:30 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 14:00:30 - __main__ - INFO - Line 10
+2025-07-20 14:00:30 - __main__ - INFO - Line 9
+2025-07-20 14:00:30 - __main__ - INFO - Line 8
+2025-07-20 14:00:30 - __main__ - INFO - Line 7
+2025-07-20 14:00:30 - __main__ - INFO - Line 6
+2025-07-20 14:00:30 - __main__ - INFO - Line 5
+2025-07-20 14:00:30 - __main__ - INFO - Line 4
+2025-07-20 14:00:30 - __main__ - INFO - Line 3
+2025-07-20 14:00:30 - __main__ - INFO - Line 2
+2025-07-20 14:00:30 - __main__ - INFO - Line 1
+2025-07-20 14:00:30 - root - INFO - Finished the asynchronous file operations
+2025-07-20 14:03:21 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - Alice
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - Alice
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - Alice
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - Alice
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - Alice
+2025-07-20 14:03:21 - __main__ - INFO - Charlie
+2025-07-20 14:03:21 - __main__ - INFO - Bob
+2025-07-20 14:03:21 - __main__ - INFO - AliceBobCharlieAliceBobCharlieAlice
+2025-07-20 14:03:21 - __main__ - INFO - Line 10
+2025-07-20 14:03:21 - __main__ - INFO - Line 9
+2025-07-20 14:03:21 - __main__ - INFO - Line 8
+2025-07-20 14:03:21 - __main__ - INFO - Line 7
+2025-07-20 14:03:21 - __main__ - INFO - Line 6
+2025-07-20 14:03:21 - __main__ - INFO - Line 5
+2025-07-20 14:03:21 - __main__ - INFO - Line 4
+2025-07-20 14:03:21 - __main__ - INFO - Line 3
+2025-07-20 14:03:21 - __main__ - INFO - Line 2
+2025-07-20 14:03:21 - __main__ - INFO - Line 1
+2025-07-20 14:03:21 - root - INFO - Finished the asynchronous file operations
+2025-07-20 14:07:12 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:07:12 - __main__ - INFO - Total lines: 28
+2025-07-20 14:07:12 - root - INFO - Finished the asynchronous file operations
+2025-07-20 14:09:29 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:09:44 - root - INFO - Starting the asynchronous file operations
+2025-07-20 14:09:44 - __main__ - INFO - 2
+2025-07-20 14:09:44 - __main__ - INFO - 4
+2025-07-20 14:09:44 - __main__ - INFO - 6
+2025-07-20 14:09:44 - __main__ - INFO - 8
+2025-07-20 14:09:44 - __main__ - INFO - 10
+2025-07-20 14:09:44 - __main__ - INFO - 12
+2025-07-20 14:09:44 - __main__ - INFO - 14
+2025-07-20 14:09:44 - __main__ - INFO - 16
+2025-07-20 14:09:44 - __main__ - INFO - 18
+2025-07-20 14:09:44 - __main__ - INFO - 20
+2025-07-20 14:09:44 - root - INFO - Finished the asynchronous file operations
