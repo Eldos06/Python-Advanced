@@ -1,4 +1,4 @@
 {
     "editor.suggestOnTriggerCharacters": false,
-    "editor.suggest.selectionMode": "never"
+    "editor.suggest.selectionMode": "whenQuickSuggestion",    "editor.acceptSuggestionOnEnter": "on"
 }
