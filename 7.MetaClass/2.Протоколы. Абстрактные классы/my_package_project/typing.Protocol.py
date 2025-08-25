@@ -1,6 +1,8 @@
 import logging
 from email_sender import EmailSender, loggingEmailBackend
-from common import configure_logging
+from common import configure_logging, BASE_DIR
+
+from my_package.file_email_backend import FileEmailBackend
 
 WelcomeTemplate = """
 Dear {name},
@@ -12,12 +14,7 @@ The Team.
 
 """
 
-def main() -> None:
-    configure_logging()
-    logging.info("Starting the main function.")  # Added log message
-
-    logging_backend = loggingEmailBackend('sender')
-    sender = EmailSender(backend = logging_backend)
+def send_mails(sender: EmailSender) -> None:
     name = "Bob"
     recipient = "bob@ya.ru"
     subject = "Hello Bob"
@@ -37,6 +34,20 @@ def main() -> None:
         name=name,
     )
 
+
+def main() -> None:
+    configure_logging()
+    logging.info("Starting the main function.")  # Added log message
+
+    logging_backend = loggingEmailBackend('sender')
+    sender = EmailSender(backend = logging_backend)
+
+    send_mails(sender)
+    emails_directory =  BASE_DIR / 'emails'
+    file_backend = FileEmailBackend(directory=emails_directory)
+    send_mails(sender)
+
 if __name__ == "__main__":
     main()
+
 

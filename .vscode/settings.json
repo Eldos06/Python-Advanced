@@ -1,4 +1,6 @@
 {
     "editor.suggestOnTriggerCharacters": false,
-    "editor.suggest.selectionMode": "whenQuickSuggestion",    "editor.acceptSuggestionOnEnter": "on"
+    "editor.suggest.selectionMode": "whenQuickSuggestion",
+    "editor.acceptSuggestionOnEnter": "on",
+    "wolf.disableHotModeWarning": true
 }

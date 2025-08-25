@@ -1,4 +1,4 @@
-from common import log
+
 import logging
 from typing import Protocol
 
@@ -64,3 +64,5 @@ class EmailSender:
           subject=subject,
           body=body
       )
+
+
