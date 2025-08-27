@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run with IPython",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "IPython",
+                "-i",
+                "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
