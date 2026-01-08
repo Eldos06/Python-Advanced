@@ -211,6 +211,16 @@ user = User("Yerbol")
 # log(vars(User)['email'].domain)
 
 
+
+
+
+
+
+
+
+
+
+
 # ==== Абстрактный валидатор ====
 class Validator(ABC):
     def __set_name__(self, owner, name):
