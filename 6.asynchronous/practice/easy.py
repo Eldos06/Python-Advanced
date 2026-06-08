@@ -14,7 +14,7 @@ logging.basicConfig(
 
 log = logging.getLogger(__name__)
 
-async def hell0():
+async def hell0() -> None:
     log.info("Starting ...")
     await sleep(2)
     log.info("Hello")
@@ -60,22 +60,22 @@ async def main():
 
 # ✅ Simulate checking the weather in 3 cities using asyncio.gather.
 
-async def ShymWeather():
+async def ShymWeather() -> None:
     log.info("Checking weather in Shymkent ... ")
     await sleep(1.05)
     log.info("Checked weather in Shymkent!")
 
-async def AstWeather():
+async def AstWeather() -> None:
     log.info("Checking weather in Astana ... ")
     await sleep(1.02)
     log.info("Checked weater in Astana!")
 
-async def AlmaWeather():
+async def AlmaWeather() -> None:
     log.info("Checking weather in Almata ... ")
     await sleep(1.03)
     log.info("Checked weather in Almata!")
 
-async def main():
+async def main() -> None:
     await asyncio.gather(
         ShymWeather(),
         AstWeather(),

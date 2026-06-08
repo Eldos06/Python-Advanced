@@ -2,7 +2,7 @@ import asyncio
 import aiofiles
 import aiofiles.os
 from common import log
-
+[[MetaClass]]
 
 fileName = 'EvenNum.txt'
 
