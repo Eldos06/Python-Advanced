@@ -5,20 +5,20 @@ class User:
         self.name = name
         self.age = age
 
-# user1 = User('John', 36)
-# user2 = User('John', 36)
-# print(user1.name, user2.name)
-# print(user1.name)
-# print(user1.age)
-#
-#
-#
-# user1.email = '321452@sdu.edu.kz'
-# print(user1.email)
-# print(vars(user1))
-# print(vars(user2))
-#
-# print(getsizeof(user1))
+user1 = User('John', 36)
+user2 = User('John', 36)
+print(user1.name, user2.name)
+print(user1.name)
+print(user1.age)
+
+
+
+user1.email = '321452@sdu.edu.kz'
+print(user1.email)
+print(vars(user1))
+print(vars(user2))
+
+print(getsizeof(user1))
 
 class User:
     __slots__ = ('name', 'age')

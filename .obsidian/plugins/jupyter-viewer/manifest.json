@@ -1,0 +1,10 @@
+{
+  "id": "jupyter-viewer",
+  "name": "Jupyter Notebook Viewer",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Renders .ipynb Jupyter notebook files with syntax-highlighted code cells, formatted markdown, and inline outputs.",
+  "author": "cteplovs",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}

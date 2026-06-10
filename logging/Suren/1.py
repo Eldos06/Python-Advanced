@@ -36,3 +36,8 @@ def process_payment_logged(amount, user_id):
 
 
 process_payment_logged(amount=1, user_id=1)
+
+
+
+
+

@@ -1,29 +1,29 @@
-######## Protected ##########
-# Protected Access Modifier
-# A member is considered protected if its name starts with a single underscore (_).
-# Convention only: It suggests that the member should not be accessed outside the class except by subclasses.
-# Still, Python allows direct access if explicitly called.
-
-class User:
-    def __init__(self, name, password):
-        self.name = name
-        self._password = password # Protected - should do not touch (but u can do it)
-
-user = User("John", "Doslend")
+# ######## Protected ##########
+# # Protected Access Modifier
+# # A member is considered protected if its name starts with a single underscore (_).
+# # Convention only: It suggests that the member should not be accessed outside the class except by subclasses.
+# # Still, Python allows direct access if explicitly called.
+#
+# class User:
+#     def __init__(self, name, password):
+#         self.name = name
+#         self._password = password # Protected - should do not touch (but u can do it)
+#
+# user = User("John", "Doslend")
 # print(user.name)      #John
 # print(user._password) #Doslend
 # print()
-
-######### Private #########
-# 3. Private Access Modifier
-# A member is private if its name starts with double underscores (__).
-# Python does not enforce strict privacy — instead, it uses Name Mangling.
-# The interpreter renames __var to _ClassName__var internally.
-class User:
-    def __init__(self, name, password):
-        self.name = name
-        self.__password = password # Private - You can not access it outside of class!
-
+#
+# ######### Private #########
+# # 3. Private Access Modifier
+# # A member is private if its name starts with double underscores (__).
+# # Python does not enforce strict privacy — instead, it uses Name Mangling.
+# # The interpreter renames __var to _ClassName__var internally.
+# class User:
+#     def __init__(self, name, password):
+#         self.name = name
+#         self.__password = password # Private - You can not access it outside of class!
+#
 # user = User("John", "Hehehheh")
 # print(user.name)      #John
 # # print(user.__password)    #AttributeError: 'User' object has no attribute '__password'
@@ -31,15 +31,15 @@ class User:
 # print(user.__dict__.keys()) # dict_keys(['name', '_User__password'])
 # print(vars(user))           #{'name': 'John', '_User__password': 'Hehehheh'}
 # print(user._User__password) # Hehehheh
-
-
-class User:
-    def __init__(self, name, password):
-        self.name = name
-        self.__password = password # Private - You can not access it outside of class!
-
-    def get_password(self):
-        return self.__password
+#
+#
+# class User:
+#     def __init__(self, name, password):
+#         self.name = name
+#         self.__password = password # Private - You can not access it outside of class!
+#
+#     def get_password(self):
+#         return self.__password
 
 ###### Hash #####
 # Hashing is a technique that transforms variable-length input (like a string) into a fixed-length output (a "hash" or "digest") to enable fast data retrieva

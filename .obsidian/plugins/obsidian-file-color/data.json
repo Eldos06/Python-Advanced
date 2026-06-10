@@ -1,0 +1,35 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "Ogfrv1liWcJCMgoOIv8vh",
+      "name": "",
+      "value": "#3400f0"
+    },
+    {
+      "id": "vsqYWL5rHC9CZYNt9EXE4",
+      "name": "",
+      "value": "#009434"
+    },
+    {
+      "id": "8N_Nn-xTcq3ERo8VVFZSb",
+      "name": "",
+      "value": "#a80000"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "7.MetaClass",
+      "color": "vsqYWL5rHC9CZYNt9EXE4"
+    },
+    {
+      "path": "7.MetaClass/3.Discreptors/📚 Discreptors.md",
+      "color": "vsqYWL5rHC9CZYNt9EXE4"
+    },
+    {
+      "path": "7.MetaClass/6.parctice/Notes/task_04.md",
+      "color": "8N_Nn-xTcq3ERo8VVFZSb"
+    }
+  ]
+}

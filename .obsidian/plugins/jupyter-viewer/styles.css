@@ -1,0 +1,157 @@
+/* ── Container ──────────────────────────────────────────────────────────────── */
+
+.jv-container {
+    padding: 1.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: var(--font-text);
+}
+
+/* ── Cells ───────────────────────────────────────────────────────────────────── */
+
+.jv-cell {
+    margin-bottom: 1.25rem;
+}
+
+/* Markdown cells render as normal prose — no border needed */
+.jv-markdown-cell {
+    line-height: var(--line-height-normal);
+}
+
+/* Code cells: 2-column grid — exec badge | source — outputs span both */
+.jv-code-cell {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    background-color: var(--background-secondary);
+    border-left: 3px solid var(--color-blue);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.jv-exec-count {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0.6rem 0.25rem 0;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-family: var(--font-monospace);
+    text-align: center;
+    line-height: 1.4;
+    user-select: none;
+}
+
+.jv-code-source {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0; /* prevent grid blowout */
+}
+
+/* Strip the extra margin/background from Obsidian's rendered code blocks */
+.jv-code-source pre {
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.jv-code-source pre code {
+    font-size: 0.85rem;
+}
+
+/* ── Outputs ─────────────────────────────────────────────────────────────────── */
+
+.jv-outputs {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.jv-output {
+    padding: 0.4rem 0.75rem;
+}
+
+/* Stream (stdout / stderr) */
+.jv-stream {
+    font-family: var(--font-monospace);
+    font-size: 0.83rem;
+    color: var(--text-normal);
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 0;
+}
+
+.jv-stderr {
+    color: var(--text-error);
+}
+
+/* Rich output: pandas / polars DataFrame tables */
+.jv-rich-output {
+    overflow-x: auto;
+    font-size: 0.83rem;
+}
+
+.jv-rich-output table {
+    border-collapse: collapse;
+    color: var(--text-normal);
+}
+
+.jv-rich-output th,
+.jv-rich-output td {
+    border: 1px solid var(--background-modifier-border);
+    padding: 3px 8px;
+    text-align: right;
+}
+
+.jv-rich-output th {
+    background-color: var(--background-secondary-alt);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Hide the embedded <style scoped> blocks from pandas/polars — they override
+   our theme-aware table rules and break dark mode */
+.jv-rich-output style {
+    display: none;
+}
+
+/* Plain-text execute_result */
+.jv-plain-output {
+    font-family: var(--font-monospace);
+    font-size: 0.83rem;
+    color: var(--text-normal);
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 0;
+}
+
+/* ── Error outputs ───────────────────────────────────────────────────────────── */
+
+.jv-error {
+    padding: 0.25rem 0;
+}
+
+.jv-error-header {
+    font-family: var(--font-monospace);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-error);
+    padding: 0.2rem 0;
+}
+
+.jv-traceback {
+    font-family: var(--font-monospace);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: var(--background-secondary);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.25rem 0 0 0;
+}
+
+/* ── Parse error ─────────────────────────────────────────────────────────────── */
+
+.jv-parse-error {
+    color: var(--text-error);
+    font-family: var(--font-monospace);
+    padding: 1rem;
+}

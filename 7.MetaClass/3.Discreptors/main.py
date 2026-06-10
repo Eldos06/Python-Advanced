@@ -15,7 +15,7 @@ from abc import ABC, abstractmethod
 # class User:
 #     def __init__(self, username):
 #         self.username = username
-
+#
 #     @property
 #     def email(self):
 #         return f"{self.username}@example.com".lower()
