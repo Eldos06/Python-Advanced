@@ -1,29 +1,29 @@
 [project]
-name = "pythonadvanced"
+name = "5-generators-and-iterators"
 version = "0.1.0"
 description = ""
 authors = [
     {name = "YeldoS2",email = "eldossuleimen2006@gmail.com"}
 ]
-requires-python = ">=3.13"
+readme = "README.md"
+requires-python = ">=3.12"
 dependencies = [
-    "aiohttp (>=3.14.1,<4.0.0)",
-    "mypy (>=2.1.0,<3.0.0)",
-    "fastapi[all] (>=0.136.3,<0.137.0)",
-    "uvicorn (>=0.23.0)",
-    "pendulum (>=3.2.0,<4.0.0)"
+    "mypy (>=2.1.0,<3.0.0)"
 ]
+
+[tool.poetry]
+package-mode = false
 
 [tool.mypy]
 python_version = "3.13"
 strict = true
+warn_unreachable = true
+warn_return_any = true
+warn_unused_configs = true
 
+[tool.poetry.group.dev.dependencies]
+wrapper = "^1.1.0b1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "pytest (>=9.0.3,<10.0.0)"
-]
