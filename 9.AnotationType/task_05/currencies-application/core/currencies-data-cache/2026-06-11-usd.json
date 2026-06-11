@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-11",
+  "currency": "usd",
+  "values": [
+    {
+      "currency": "eur",
+      "value": "0.86599177"
+    },
+    {
+      "currency": "inr",
+      "value": "95.64189642"
+    },
+    {
+      "currency": "jpy",
+      "value": "160.51080253"
+    },
+    {
+      "currency": "rub",
+      "value": "72.24271678"
+    },
+    {
+      "currency": "usd",
+      "value": "1"
+    }
+  ]
+}
