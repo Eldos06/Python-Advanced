@@ -1,29 +1,24 @@
-[project]
-name = "5-generators-and-iterators"
-version = "0.1.0"
-description = ""
-authors = [
-    {name = "YeldoS2",email = "eldossuleimen2006@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "mypy (>=2.1.0,<3.0.0)"
-]
-
 [tool.poetry]
 package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "3.10.5"
+aiofiles = "^24.1.0"
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.11.2"
+type-aiofiles = "^24.1.0.20240626"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+type-aiofiles = "^24.1.0.20240626"
+
 [tool.mypy]
-python_version = "3.13"
+python_version = '3.12'
 strict = true
-warn_unreachable = true
+warn_unreachanble = true
 warn_return_any = true
 warn_unused_configs = true
 
-[tool.poetry.group.dev.dependencies]
-wrapper = "^1.1.0b1"
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
