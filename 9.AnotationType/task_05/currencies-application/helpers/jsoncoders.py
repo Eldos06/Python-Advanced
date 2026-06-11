@@ -12,7 +12,7 @@ def json_encode_default(obj: Any) -> Any:
     raise TypeError(f"Type {type(obj)} not serializable")
 
 # Функция, которая превращает любой Python-объект (словарь, список) в красивую JSON-строку
-def json_encode(obj: Any) -> Any:
+def json_encode(obj: Any) -> str: # json.dumps always return str
     return json.dumps(
         obj,
         ensure_ascii=False, # Разрешаем кириллицу и другие символы без экранирования
