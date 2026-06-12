@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/9.AnotationType/task_05/currencies-application" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_testing/1_unitest" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/7.MetaClass/6.parctice/.venv" />
     </content>
