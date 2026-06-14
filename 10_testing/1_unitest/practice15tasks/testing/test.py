@@ -3,6 +3,7 @@ import unittest  # Импортируем фреймворк, без него н
 
 from practice15tasks.discountCalculator import calculate_discount
 from practice15tasks.validateEmail import is_valid_email
+from practice15tasks.limittext import truncate_text
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
 
@@ -52,5 +53,21 @@ class TestValidateEmail(unittest.TestCase):
         self.assertFalse(is_valid_email(""))
 
 
+class TestLimitText(unittest.TestCase):  # Исправил имя класса на нормальный CamelCase!
 
+    def test_limit_text_with_dots(self):
+        # Отлично, тут всё правильно. Текст длиннее лимита — режем и шьём три точки
+        self.assertEqual(truncate_text("yeldos", 3), "yel...")
 
+    def test_limit_text_without_dots(self):
+        # Тоже красавчик. Текст короче лимита — возвращаем как есть
+        self.assertEqual(truncate_text("Yeldos Suleimonov", 30), "Yeldos Suleimonov")
+
+    def test_limit_text_exactly_equal(self):
+        # Граничный кейс: длина текста РОВНО равна лимиту.
+        # "yeldos" — это 6 символов, лимит 6. Должно вернуться "yeldos" БЕЗ точек!
+        self.assertEqual(truncate_text("yeldos", 6), "yeldos")
+
+    def test_limit_text_empty_string(self):
+        # На бэкенд часто прилетает пустая херня. Надо проверить, что функция не сдохнет
+        self.assertEqual(truncate_text("", 5), "")
