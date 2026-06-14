@@ -1,9 +1,11 @@
 import unittest  # Импортируем фреймворк, без него никуда
 
-
-from practice15tasks.discountCalculator import calculate_discount
-from practice15tasks.validateEmail import is_valid_email
-from practice15tasks.limittext import truncate_text
+from practice15tasks.fucntions import (
+calculate_discount,
+is_valid_email,
+truncate_text,
+is_admin,
+)
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
 
@@ -71,3 +73,19 @@ class TestLimitText(unittest.TestCase):  # Исправил имя класса 
     def test_limit_text_empty_string(self):
         # На бэкенд часто прилетает пустая херня. Надо проверить, что функция не сдохнет
         self.assertEqual(truncate_text("", 5), "")
+
+class TestIsAdmin(unittest.TestCase):
+
+    def test_is_admin_success(self):
+        self.assertTrue(is_admin(['teacher', 'admin']))
+
+    def test_is_admin_success_upper(self):
+        self.assertTrue(is_admin(['teAcher', 'AdmiN']))
+
+    def test_without_admin(self):
+        self.assertFalse(is_admin(['programmer', 'TEACHER', 'Singer']))
+
+    def test_empty_string(self):
+        self.assertFalse(is_admin([]))
+
+
