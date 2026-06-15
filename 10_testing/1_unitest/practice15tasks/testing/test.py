@@ -11,7 +11,7 @@ safe_divide,
 rub_to_usd,
 check_nickname,
 Cart,
-
+SessionManager,
 )
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
@@ -205,4 +205,40 @@ class TestCart(unittest.TestCase):
         # Дополнительно проверим отрицательную цену, функция ведь тоже должна упасть
         with self.assertRaises(ValueError):
             self.cart.add_item("Orange", price=-5.0, quantity=1)
+
+
+class TestSessionManager(unittest.TestCase):
+
+    def setUp(self):
+        # Перед каждым тестом создаем изолированный менеджер сессий
+        self.manager = SessionManager()
+
+    def test_session_is_active_success(self):
+        # Позитивный кейс: создаем живую сессию на 60 секунд
+        token = "token_123"
+        username = "yeldos"
+
+        self.manager.create_session(token, username, duration_sec=60)
+
+        # Проверяем, что сессия активна
+        self.assertTrue(self.manager.is_active(token))
+
+        # МИДЛ-ПРОВЕРКА: заглядываем внутрь структуры и проверяем, что юзер записался корректно!
+        self.assertEqual(self.manager.sessions[token]["username"], username)
+
+    def test_session_not_found(self):
+        # Негативный кейс: проверяем токен, которого никогда не существовало
+        self.assertFalse(self.manager.is_active("non_existent_token"))
+
+    def test_session_expired(self):
+        # Негативный кейс: создаем сессию, которая протухла 10 секунд назад
+        token = "expired_token"
+        self.manager.create_session(token, "user_test", duration_sec=-10)
+
+        # Проверяем, что менеджер видит её мертвой
+        self.assertFalse(self.manager.is_active(token))
+
+
+
+
 

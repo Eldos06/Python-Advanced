@@ -1,3 +1,6 @@
+from datetime import datetime, timedelta
+
+
 def calculate_discount(price: float, discount: float) -> float:
     if not (0 <= discount <= 100):
         raise ValueError("Скидка должна быть от 0 до 100%")
@@ -42,6 +45,17 @@ class Cart:
     def get_total(self) -> float:
         return sum(self.items.values())
 
+class SessionManager:
+    def __init__(self):
+        self.sessions = {}
 
+    def create_session(self, token: str, username: str, duration_sec: int) -> None:
+        expire_at = datetime.now() + timedelta(seconds=duration_sec)
+        self.sessions[token] = {"username": username, "expires": expire_at}
+
+    def is_active(self, token: str) -> bool:
+        if token not in self.sessions:
+            return False
+        return self.sessions[token]["expires"] > datetime.now()
 
 
