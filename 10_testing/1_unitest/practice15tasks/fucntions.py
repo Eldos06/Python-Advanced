@@ -18,3 +18,8 @@ def safe_divide(a: float, b: float, default=0.0) -> float:
     if b == 0:
         return default
     return a / b
+
+def rub_to_usd(rub_amount: float, rate: float) -> float:
+    if rub_amount < 0 or rate <= 0:
+        raise ValueError("Некорректные данные")
+    return round(rub_amount / rate, 2)
