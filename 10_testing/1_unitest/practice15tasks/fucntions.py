@@ -29,3 +29,19 @@ def check_nickname(nickname: str) -> bool:
     return not any(word in nickname.lower() for word in bad_words)
 
 
+# Средние задачи (Middle)
+class Cart:
+    def __init__(self):
+        self.items = {}  # Словарь вида {"название_товара": общая_стоимость}
+
+    def add_item(self, name: str, price: float, quantity: int = 1):
+        if price <= 0 or quantity <= 0:
+            raise ValueError("Некорректная цена или количество")
+        self.items[name] = self.items.get(name, 0) + (price * quantity)
+
+    def get_total(self) -> float:
+        return sum(self.items.values())
+
+
+
+
