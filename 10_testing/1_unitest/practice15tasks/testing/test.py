@@ -12,6 +12,7 @@ rub_to_usd,
 check_nickname,
 Cart,
 SessionManager,
+parse_user_balance,
 )
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
@@ -238,6 +239,22 @@ class TestSessionManager(unittest.TestCase):
         # Проверяем, что менеджер видит её мертвой
         self.assertFalse(self.manager.is_active(token))
 
+class TestParse(unittest.TestCase):
+
+    def test_parse_success(self):
+        api_response = {"response": {"user": {"id": 42, "balance": "150.00"}}}
+
+        result = parse_user_balance(api_response)
+
+        expected_result = {"user_id": 42, "balance": 150.00}
+
+        self.assertEqual(result, expected_result)
+
+    def test_parse_failure(self):
+        invalid_response = {"response": {"user": {"number": 42, "cash": "150.50"}}}
+
+        with self.assertRaises(KeyError):
+            parse_user_balance(invalid_response)
 
 
 

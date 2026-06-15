@@ -59,3 +59,8 @@ class SessionManager:
         return self.sessions[token]["expires"] > datetime.now()
 
 
+def parse_user_balance(json_data: dict) -> dict:
+    user_info = json_data.get("response", {}).get("user", {})
+    if "id" not in user_info or "balance" not in user_info:
+        raise KeyError("Missing required fields")
+    return {"user_id": user_info["id"], "balance": float(user_info["balance"])}
