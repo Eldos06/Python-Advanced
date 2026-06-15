@@ -5,6 +5,7 @@ calculate_discount,
 is_valid_email,
 truncate_text,
 is_admin,
+safe_divide,
 )
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
@@ -88,4 +89,27 @@ class TestIsAdmin(unittest.TestCase):
     def test_empty_string(self):
         self.assertFalse(is_admin([]))
 
+
+class TestSafeDivide(unittest.TestCase):  # Имя класса с большой буквы!
+
+    def test_safe_divide_success(self):
+        # Обычное деление. Ждем ровно 1.0 (float)
+        self.assertEqual(safe_divide(10, 10), 1.0)
+
+    def test_small_number_divide_big_number(self):
+        # Исправил твой "smail" на нормальный "small"! 1 делим на 10 = 0.1
+        self.assertEqual(safe_divide(1, 10), 0.1)
+
+    def test_zero_division_with_default_value(self):
+        # Деление на ноль. По умолчанию функция должна вернуть 0.0
+        self.assertEqual(safe_divide(10, 0), 0.0)
+
+    def test_zero_division_with_custom_default(self):
+        # А вот этот критически важный кейс ты просрал!
+        # Проверяем, что если мы передали свой default=99.0, то функция вернет именно его
+        self.assertEqual(safe_divide(10, 0, default=99.0), 99.0)
+
+    def test_both_inputs_are_zero(self):
+        # Деление нуля на ноль. Тоже должно вернуть дефолт 0.0
+        self.assertEqual(safe_divide(0, 0), 0.0)
 
