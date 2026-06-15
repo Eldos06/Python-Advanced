@@ -262,6 +262,19 @@ class TestGetPage(unittest.TestCase):
     def test_invalid_page_zero(self):
         self.assertListEqual(get_page_items(self.items, 0, 2), [])
 
+class TestSafetyPassword(unittest.TestCase):
+    def test_ideal_password_success(self):
+        self.assertTrue(check_password_strength("Yeldos2111"))
 
+    def test_small_password(self):
+        self.assertFalse(check_password_strength("Yeldos2"))
 
+    def test_without_lower(self):
+        self.assertFalse(check_password_strength("YELDOS211121"))
+
+    def test_without_upper(self):
+        self.assertFalse(check_password_strength("yeldos21112"))
+
+    def test_without_digit(self):
+        self.assertFalse(check_password_strength("yeldoseifjoqkDJFsdf"))
 
