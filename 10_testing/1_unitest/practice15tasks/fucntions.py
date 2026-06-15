@@ -23,3 +23,9 @@ def rub_to_usd(rub_amount: float, rate: float) -> float:
     if rub_amount < 0 or rate <= 0:
         raise ValueError("Некорректные данные")
     return round(rub_amount / rate, 2)
+
+def check_nickname(nickname: str) -> bool:
+    bad_words = ["admin", "root", "pizda", "gavno"]
+    return not any(word in nickname.lower() for word in bad_words)
+
+

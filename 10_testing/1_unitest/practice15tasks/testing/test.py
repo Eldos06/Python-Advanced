@@ -8,6 +8,7 @@ truncate_text,
 is_admin,
 safe_divide,
 rub_to_usd,
+check_nickname,
 )
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
@@ -139,7 +140,28 @@ class TestRubToUsd(unittest.TestCase):
         with self.assertRaises(ValueError):
             rub_to_usd(100000.0, 0.0)
 
+class TestCheckNickname(unittest.TestCase):  # Название класса по PEP 8
 
+    def test_nickname_success(self):
+        # Позитивный кейс: обычный чистый никнейм. Должен вернуть True
+        self.assertTrue(check_nickname("yeldos"))
 
+    def test_nickname_with_bad_word_inside(self):
+        # Негативный кейс: плохое слово спрятано внутри. Должен вернуть False
+        self.assertFalse(check_nickname("vipecodinggavno"))
+
+    def test_nickname_empty_string(self):
+        # ИСПРАВЛЕНО: Пустая строка не содержит мата, поэтому функция вернет True!
+        # Мы тестируем логику функции, а не наши фантазии
+        self.assertTrue(check_nickname(""))
+
+    def test_nickname_bad_word_upper_case(self):
+        # ИСПРАВЛЕНО: Вот это реальная проверка верхнего регистра!
+        # Слово "ADMIN" написано капсом, но функция должна его поймать и вернуть False
+        self.assertFalse(check_nickname("SUPER_ADMIN_99"))
+
+    def test_nickname_bad_word_embedded(self):
+        # Дополнительный крутой кейс: запрещенное слово зажато между другими буквами
+        self.assertFalse(check_nickname("123root456"))
 
 
