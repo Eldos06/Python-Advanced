@@ -64,3 +64,10 @@ def parse_user_balance(json_data: dict) -> dict:
     if "id" not in user_info or "balance" not in user_info:
         raise KeyError("Missing required fields")
     return {"user_id": user_info["id"], "balance": float(user_info["balance"])}
+
+def get_page_items(items: list, page: int, page_size: int) -> list:
+    if page <= 0 or page_size <= 0:
+        return []
+    start = (page - 1) * page_size
+    end = start + page_size
+    return items[start:end]

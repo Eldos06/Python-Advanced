@@ -1,19 +1,9 @@
 import unittest  # Импортируем фреймворк, без него никуда
 
-from poetry.console.commands import self
 
-from practice15tasks.fucntions import (
-calculate_discount,
-is_valid_email,
-truncate_text,
-is_admin,
-safe_divide,
-rub_to_usd,
-check_nickname,
-Cart,
-SessionManager,
-parse_user_balance,
-)
+
+from practice15tasks.fucntions import *
+
 
 class TestDiscountCalculator(unittest.TestCase):  # Называем класс по-человечески
 
@@ -255,6 +245,22 @@ class TestParse(unittest.TestCase):
 
         with self.assertRaises(KeyError):
             parse_user_balance(invalid_response)
+
+class TestGetPage(unittest.TestCase):
+    def setUp(self):
+        self.items = ["A", "B", "C", "D", "E"]
+
+    def test_page_success(self):
+        self.assertListEqual(get_page_items(self.items, 1, 2), ["A", "B"])
+
+    def test_page_success_mid(self):
+        self.assertListEqual(get_page_items(self.items, 2, 3), ["D", "E"])
+
+    def test_page_out_of_bounds(self):
+        self.assertListEqual(get_page_items(self.items, 10, 2), [])
+
+    def test_invalid_page_zero(self):
+        self.assertListEqual(get_page_items(self.items, 0, 2), [])
 
 
 
