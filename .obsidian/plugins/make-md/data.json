@@ -46,8 +46,8 @@
     "//7.MetaClass/7.MetaClass/4.slot",
     "//9.AnotationType/9.AnotationType/3.poetry",
     "/",
-    "//9.AnotationType",
-    "//9.AnotationType/9.AnotationType/2.mypy"
+    "//9.AnotationType/9.AnotationType/2.mypy",
+    "//10_testing"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
