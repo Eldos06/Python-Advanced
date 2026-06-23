@@ -76,7 +76,7 @@
             }
           },
           {
-            "id": "3984fa7336de1ba0",
+            "id": "ea11dc1942fc058a",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -85,8 +85,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "add1f2dd3a651de4",
@@ -227,7 +226,7 @@
       "graph:Open graph view": false
     }
   },
-  "active": "fac1f17ce4261e47",
+  "active": "86fa096235d7b8da",
   "lastOpenFiles": [
     "10_testing/3_pytest/pytest.md",
     "9.AnotationType/2.mypy/SpeedRead.md",

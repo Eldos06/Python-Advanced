@@ -9,7 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/7.MetaClass/6.parctice/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (PythonAdvanced)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at D:\myProject\III term\AcademyPythonAdvanced\PythonAdvanced\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
