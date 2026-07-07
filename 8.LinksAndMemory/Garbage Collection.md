@@ -1,5 +1,5 @@
 [^1]
-[[GarbageCollector.py]]
+[[GarbageCollector.py]] [[practice1.ipynb]]
 # Управление памятью и Garbage Collection (GC) в Python
 
 ## 1. Подсчет ссылок (Reference Counting) — Основной механизм

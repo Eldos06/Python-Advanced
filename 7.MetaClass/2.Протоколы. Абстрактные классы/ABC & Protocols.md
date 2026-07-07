@@ -100,3 +100,13 @@ Your code demonstrates a decoupled email system where the **Sender** logic is se
     
 
 #Python #OOP #DesignPatterns #AbstractClasses #Protocols #DependencyInjection
+
+## Файлы проекта `my_package_project/`
+
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/email_sender.py|email_sender.py]] - клиентский класс `EmailSender`.
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/my_package/base_email_backend.py|my_package/base_email_backend.py]] - протокол `BaseEmailBackend`.
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/my_package/file_email_backend.py|my_package/file_email_backend.py]] - бэкенд, сохраняющий письма в `.txt`-файлы, использует
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/my_package/hardSubjects.txt|hardSubjects.txt]] как источник тестовых тем писем.
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/my_package/__init__.py|my_package/__init__.py]] - файл-маркер пакета.
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/setup.py|setup.py]] - `setup.py` для установки `my_package` как отдельного пакета (`pip install -e .`).
+[[7.MetaClass/2.Протоколы. Абстрактные классы/my_package_project/typing.Protocol.py|typing.Protocol.py]] - отдельный черновик/эксперименты с `typing.Protocol` вне основного пакета.

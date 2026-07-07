@@ -218,3 +218,12 @@ When you run the simple `pytest` command in your terminal, the internal workflow
         testing/*
         migrations/*
     ```
+
+## 📁 Файлы этого урока
+
+Конфигурация: [[10_testing/3_pytest/pytest.ini|pytest.ini]], [[10_testing/3_pytest/.coveragerc|.coveragerc]].
+Артефакты запуска `coverage`/`pytest --cov` (перегенерируются при каждом прогоне):
+[[10_testing/3_pytest/.coverage|.coverage]], [[10_testing/3_pytest/testing/.coverage|testing/.coverage]].
+Пустые файлы-пакеты: [[10_testing/3_pytest/models/__init__.py|models/__init__.py]],
+[[10_testing/3_pytest/testing/__init__.py|testing/__init__.py]],
+[[10_testing/3_pytest/testing/test_models/__init__.py|testing/test_models/__init__.py]].
