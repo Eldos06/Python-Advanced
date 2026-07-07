@@ -2,5 +2,12 @@
     "editor.suggestOnTriggerCharacters": false,
     "editor.suggest.selectionMode": "whenQuickSuggestion",
     "editor.acceptSuggestionOnEnter": "on",
-    "wolf.disableHotModeWarning": true
+    "wolf.disableHotModeWarning": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "10_testing/6_pytest_prametrize",
+        "-v"
+    ]
 }

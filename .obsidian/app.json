@@ -1,1 +1,6 @@
-{}
+{
+  "userIgnoreFilters": [
+    "__pycache__",
+    "cov-report"
+  ]
+}
