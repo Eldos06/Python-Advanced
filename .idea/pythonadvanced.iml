@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/10_testing/1_unitest" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/10_testing/1_unitest/practice15tasks" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/10_testing/2_coverage" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_testing/7_pytest_configuration_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_testing/7_pytest_configuration_test/testing" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/7.MetaClass/6.parctice/.venv" />
     </content>
