@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bc1b4cc146371a42",
+            "id": "a4b431ad652834fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10_testing/7_pytest_configuration_test/Конфигурация pytest.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Конфигурация pytest"
+            }
+          },
+          {
+            "id": "b03eb9d3cc1c5fac",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -17,7 +31,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -29,7 +44,7 @@
       {
         "id": "abc7af6d960b42a1",
         "type": "tabs",
-        "dimension": 26.585365853658537,
+        "dimension": 75.60975609756098,
         "children": [
           {
             "id": "86fa096235d7b8da",
@@ -72,7 +87,7 @@
             }
           },
           {
-            "id": "7f581e9e9ad2356c",
+            "id": "68f32aac5bb4696b",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -81,13 +96,12 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "add1f2dd3a651de4",
         "type": "tabs",
-        "dimension": 73.41463414634146,
+        "dimension": 24.390243902439025,
         "children": [
           {
             "id": "fac1f17ce4261e47",
@@ -102,8 +116,23 @@
               "icon": "lucide-file",
               "title": "Retry decorator"
             }
+          },
+          {
+            "id": "bc1b4cc146371a42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10_testing/7_pytest_configuration_test/parametrize.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "parametrize"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -227,8 +256,10 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "bc1b4cc146371a42",
+  "active": "b03eb9d3cc1c5fac",
   "lastOpenFiles": [
+    "10_testing/7_pytest_configuration_test/Конфигурация pytest.md",
+    "10_testing/7_pytest_configuration_test/parametrize.md",
     "6.asynchronous/practice/lecture/aiohttp/aiohttpdemo_polls/middlewares.py",
     "9.AnotationType/3.poetry/Poetry.md.tmp.17956.9042d6bf3358",
     "test data structure/Алгоритмы и структуры данных.md.tmp.17956.340e0a3b3ecd",
@@ -245,7 +276,6 @@
     "pet PROJECT/Math trainer.md",
     "pet PROJECT/Math trainer.md.tmp.17956.f7862e8b522e",
     "fastapi_intro/FastAPI intro.md",
-    "fastapi_intro/FastAPI intro.md.tmp.17956.b79136163242",
     "logging/Логирование.md",
     "SQL/SQL и SQLAlchemy.md",
     "OOP/ООП основы.md",
@@ -264,7 +294,6 @@
     "6.asynchronous/practice/Asyncio basics.md",
     "5.Generators_and_Iterators/Генераторы и итераторы.md",
     "2.Углубленная работа с декораторами/2_Классы-декораторы/Классы-декораторы.md",
-    "2.Углубленная работа с декораторами/1_Вложенные декораторы/Вложенные декораторы.md",
     "Pasted image 20260609101352.png",
     "photo_2026-06-09_10-08-44.jpg",
     "Pasted image 20260609101223.png",
