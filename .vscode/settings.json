@@ -9,5 +9,6 @@
     "python.testing.pytestArgs": [
         "10_testing/6_pytest_prametrize",
         "-v"
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }

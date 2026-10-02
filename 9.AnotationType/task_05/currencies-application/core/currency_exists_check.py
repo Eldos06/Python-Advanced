@@ -1,7 +1,6 @@
 import logging
 from dataclasses import dataclass, field
 import aiohttp
-from poetry.console.commands import self
 
 from core import config
 
@@ -12,7 +11,9 @@ log = logging.getLogger(__name__)
 class CurrencyExistsCheck:
     # Множество для хранения списка валют в оперативной памяти (чтобы не скачивать его каждую секунду)
     cache_currencies: set[str] = field(default_factory=set)
-    log.info(f"cache_currencies : {cache_currencies}")
+
+    def __post_init__(self) -> None:
+        log.info(f"cache_currencies : {self.cache_currencies}")
 
     # Асинхронная функция, которая скачивает справочник валют из интернета
     @classmethod
